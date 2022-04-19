@@ -1,0 +1,109 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1650210542.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "data",
+    "support"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "email",
+        "first_name",
+        "last_name",
+        "avatar"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/data/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            2
+          ],
+          "default": 0
+        },
+        "email": {
+          "$id": "#root/data/email",
+          "title": "Email",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "janet.weaver@reqres.in"
+          ],
+          "pattern": "^.*$"
+        },
+        "first_name": {
+          "$id": "#root/data/first_name",
+          "title": "First_name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Janet"
+          ],
+          "pattern": "^.*$"
+        },
+        "last_name": {
+          "$id": "#root/data/last_name",
+          "title": "Last_name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Weaver"
+          ],
+          "pattern": "^.*$"
+        },
+        "avatar": {
+          "$id": "#root/data/avatar",
+          "title": "Avatar",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://reqres.in/img/faces/2-image.jpg"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "support": {
+      "$id": "#root/support",
+      "title": "Support",
+      "type": "object",
+      "required": [
+        "url",
+        "text"
+      ],
+      "properties": {
+        "url": {
+          "$id": "#root/support/url",
+          "title": "Url",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://reqres.in/#support-heading"
+          ],
+          "pattern": "^.*$"
+        },
+        "text": {
+          "$id": "#root/support/text",
+          "title": "Text",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "To keep ReqRes free, contributions towards server costs are appreciated!"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+
+  }
+}
